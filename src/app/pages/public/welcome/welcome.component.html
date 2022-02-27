@@ -1,0 +1,56 @@
+<div class="main-banner" *ngIf="form == 'welcome'">
+  <div class="main-banner-item">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+         
+            <div
+            class="main-banner-content"
+          >
+          <h1>How we can help you achieve your goals</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida.
+            </p>
+            <div class="banner-btn">
+              <a href="#" class="default-btn">Get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-banner-image">
+            <img
+              src="../../../../assets/welcome/img/main-banner/emzhub2_banner.jpg"
+              alt="image"
+            />
+            <!-- <div class="banner-mobile">
+              <img
+                src="../../../../assets/welcome/img/main-banner/banner-mobile.png"
+                alt="image"
+              />
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="main-banner-shape">
+    <div class="shape-1">
+      <img
+        src="../../../../assets/welcome/img/main-banner/banner-shape-1.png"
+        alt="image"
+      />
+    </div>
+  </div> -->
+</div>
+
+
+<main id="main">
+  <app-home *ngIf="form == 'welcome'"></app-home>
+  <app-about *ngIf="form == 'About'"></app-about>
+  <app-service *ngIf="form == 'Service'"></app-service>
+  <app-contact *ngIf="form == 'Contact'"></app-contact>
+
+  <!--  -->
+</main>
