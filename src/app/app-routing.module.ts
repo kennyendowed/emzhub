@@ -6,6 +6,7 @@ import { AuthGuard } from './guards/auth/auth.guard';
 const routes: Routes = [{path: '',  children:[
   {path: '',  redirectTo: '/welcome', pathMatch: 'full'},
   {path: 'welcome',   loadChildren: () => import('./pages/public/public.module').then(mod => mod.PublicModule)},
+  {path: 'Emzhub-Exchange-Hub',   loadChildren: () => import('./pages/trade/trade.module').then(mod => mod.TradeModule)},
   {path: 'About',loadChildren: () => import('./pages/public/public.module').then( mod => mod.PublicModule)},
   {path: 'Contact',loadChildren: () => import('./pages/public/public.module').then( mod => mod.PublicModule)},
   {path: 'Service',loadChildren: () => import('./pages/public/public.module').then( mod => mod.PublicModule)},

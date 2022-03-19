@@ -19,10 +19,12 @@ import { ContactComponent } from './pages/contact/contact.component';
 import {ServiceComponent } from './pages/service/service.component';
 import {ConsultationsComponent} from './pages/consultations/consultations.component';
 import { TmNgOdometerModule } from 'tm-ng-odometer';
+import { TradeHeaderComponent } from './layout/trade/trade-header/trade-header.component';
+import { TradeFooterComponent } from './layout/trade/trade-footer/trade-footer.component';
 
 // import {MaterialModule} from './material/material.module';
 
-export const component = [
+export const component = [TradeHeaderComponent,TradeFooterComponent,
   ConsultationsComponent,ServiceComponent,ContactComponent,AboutComponent, HomeComponent,PublicHeaderComponent,PublicFooterComponent,RequestResetComponent,ResetPasswordComponent,
   CustomerFooterComponent,CustomerHeaderComponent,RegisterComponent,LoginComponent,VerifyAccountComponent
 ]

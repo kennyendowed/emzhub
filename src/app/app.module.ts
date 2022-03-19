@@ -13,6 +13,7 @@ import { AuthGuard } from './guards/auth/auth.guard';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxAgoraModule } from 'ngx-agora';
 import { environment } from  '../environments/environment.prod';
+import { PagesComponentModule } from './pages/pages.module';
 // import { NgxboostrapModule} from './Components/ngxBoostrap/ngxboostrap.module';
 // import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 // import { ButtonsModule } from 'ngx-bootstrap/buttons';
@@ -39,10 +40,10 @@ import { environment } from  '../environments/environment.prod';
   declarations: [
      AppComponent,ErrorComponent,SidebarComponent
   ],
-  imports: [    
+  imports: [  
     NgxAgoraModule.forRoot({
       AppID: environment.agora.appId,
-        }), BrowserModule,CommonModule,ProviderModule,AppRoutingModule,ComponentModule, BrowserAnimationsModule, ToastrModule.forRoot(),HttpClientModule
+        }), BrowserModule,CommonModule,ProviderModule,AppRoutingModule,PagesComponentModule,ComponentModule, BrowserAnimationsModule, ToastrModule.forRoot(),HttpClientModule
   ],
   providers:[ AuthGuard],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
