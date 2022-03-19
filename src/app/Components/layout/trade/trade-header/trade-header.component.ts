@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trade-header.component.css']
 })
 export class TradeHeaderComponent implements OnInit {
-
+  public isCollapsed = true;
   constructor() { }
 
   ngOnInit(): void {

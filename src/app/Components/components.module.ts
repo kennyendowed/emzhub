@@ -21,6 +21,7 @@ import {ConsultationsComponent} from './pages/consultations/consultations.compon
 import { TmNgOdometerModule } from 'tm-ng-odometer';
 import { TradeHeaderComponent } from './layout/trade/trade-header/trade-header.component';
 import { TradeFooterComponent } from './layout/trade/trade-footer/trade-footer.component';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 // import {MaterialModule} from './material/material.module';
 
@@ -31,7 +32,7 @@ export const component = [TradeHeaderComponent,TradeFooterComponent,
 
 
 @NgModule({
-    imports: [TmNgOdometerModule ,NgxSpinnerModule,CommonModule,RouterModule,NgxIntlTelInputModule,ReactiveFormsModule],
+    imports: [TmNgOdometerModule ,CollapseModule,NgxSpinnerModule,CommonModule,RouterModule,NgxIntlTelInputModule,ReactiveFormsModule],
     exports: component,
     schemas: [
       CUSTOM_ELEMENTS_SCHEMA
