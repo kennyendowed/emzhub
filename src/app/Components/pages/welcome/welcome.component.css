@@ -1,0 +1,284 @@
+.main-banner {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.main-banner-item {
+    background-color: #fafafa;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main-banner-item.banner-item-two {
+    background-image: url(../../../../assets/welcome/img/main-banner/banner-bg-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.main-banner-item.banner-item-two::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+.main-banner-item.banner-item-two .main-banner-content h1 {
+    color: #fff;
+}
+.main-banner-item.banner-item-two .main-banner-content p {
+    color: #fff;
+}
+.main-banner-item.banner-item-two .main-banner-content .banner-btn .default-btn {
+    background-color: #4865ff;
+}
+.main-banner-item.banner-item-three {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.main-banner-item.banner-item-three .main-banner-content .banner-btn .default-btn {
+    background-color: #4ed198;
+}
+.main-banner-item.banner-item-three .main-banner-image {
+    position: relative;
+    z-index: 1;
+}
+.main-banner-item.banner-item-five {
+    background-image: url(../../../../assets/welcome/img/main-banner/banner-bg-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding-top: 235px;
+    padding-bottom: 235px;
+    background-attachment: fixed;
+}
+.main-banner-item.banner-item-five::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+.main-banner-item.banner-item-five .main-banner-content {
+    max-width: 650px;
+}
+.main-banner-item.banner-item-five .main-banner-content h1 {
+    color: #fff;
+}
+.main-banner-item.banner-item-five .main-banner-content p {
+    color: #fff;
+}
+.main-banner-content h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.main-banner-content p {
+    margin-bottom: 0;
+}
+.main-banner-content .banner-btn {
+    margin-top: 30px;
+}
+.main-banner-image {
+    position: relative;
+}
+.main-banner-image .banner-mobile {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.main-banner-shape .shape-1 {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    -webkit-animation: moveBounce 5s linear infinite;
+    animation: moveBounce 5s linear infinite;
+}
+.main-banner-shape .shape-2 {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    -webkit-animation: moveBounce 5s linear infinite;
+    animation: moveBounce 5s linear infinite;
+}
+.main-banner-shape .shape-3 {
+    position: absolute;
+    top: 15%;
+    -webkit-transform: translateY(-15%);
+    transform: translateY(-15%);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: moveBounce 5s linear infinite;
+    animation: moveBounce 5s linear infinite;
+}
+@-webkit-keyframes moveBounce {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+@keyframes moveBounce {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+.main-banner-form {
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+    padding: 50px 40px;
+    position: relative;
+    border-radius: 10px;
+    max-width: 590px;
+    margin-left: auto;
+}
+.main-banner-form .content {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.main-banner-form .content h3 {
+    font-size: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.main-banner-form .form-group {
+    margin-bottom: 15px;
+}
+.main-banner-form .form-group .form-control {
+    padding: 15px 20px;
+    border: 1px solid #ebebeb;
+    color: #6e727f;
+    border-radius: 0;
+    background-color: #ebebeb;
+    font-size: 16px;
+    font-weight: 600;
+    height: 60px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.main-banner-form .form-group .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+.main-banner-form .form-group label {
+    font-size: 16px;
+    color: #6e727f;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main-banner-form .nice-select {
+    height: 60px;
+    width: 100%;
+    line-height: 48px;
+    font-size: 16px;
+    padding-left: 20px;
+    border: 1px solid #ebebeb;
+    color: #6e727f;
+    border-radius: 0;
+    background-color: #ebebeb;
+    padding-top: 5px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.main-banner-form .nice-select:focus {
+    background-color: transparent;
+}
+.main-banner-form .nice-select .list {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
+    box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
+    border-radius: 0;
+    margin-top: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-banner-form .nice-select .list .option {
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    color: #09101f;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main-banner-form .nice-select .list .option:hover {
+    background-color: #4865ff !important;
+    color: #fff;
+}
+.main-banner-form .nice-select .list .option.selected {
+    background-color: transparent;
+    font-weight: 600;
+}
+.main-banner-form .nice-select::after {
+    height: 8px;
+    width: 8px;
+    border-color: #b5b6bc;
+    right: 20px;
+}
+.main-banner-form .lost-your-id {
+    font-size: 16px;
+    color: #6e727f;
+    font-weight: 600;
+    float: right;
+}
+.main-banner-form .lost-your-id:hover {
+    color: #4865ff;
+}
+.main-banner-form .lost-your-password {
+    font-size: 16px;
+    color: #6e727f;
+    font-weight: 600;
+    float: right;
+}
+.main-banner-form .lost-your-password:hover {
+    color: #4865ff;
+}
+.main-banner-form .banner-form-btn {
+    margin-top: 10px;
+}
+.main-banner-form .banner-form-btn .default-btn {
+    cursor: pointer;
+    width: 100%;
+    background-color: #4865ff;
+    border: none;
+}
+
+@media only screen and (max-width: 767px){
+.main-banner-content h1 {
+    font-size: 30px;
+}
+}

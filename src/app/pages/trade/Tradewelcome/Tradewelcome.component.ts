@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css']
+  selector: 'app-Tradewelcome',
+  templateUrl: './Tradewelcome.component.html',
+  styleUrls: ['./Tradewelcome.component.css']
 })
-export class WelcomeComponent implements OnInit {
+export class TradeWelcomeComponent implements OnInit {
   form: any;
   constructor( private route: ActivatedRoute) { }
 

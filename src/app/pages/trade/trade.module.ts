@@ -3,19 +3,19 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ComponentModule } from 'src/app/Components/components.module';
 import { TradeComponent } from './trade.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { TradeWelcomeComponent } from './Tradewelcome/Tradewelcome.component';
 
  const routes: Routes = [{
    path:'', component: TradeComponent, children:[
     { 
-        path:'', component: WelcomeComponent
+        path:'', component: TradeWelcomeComponent
     },
    
    ]
 }]
 
 export const component = [
-  TradeComponent, WelcomeComponent
+  TradeComponent, TradeWelcomeComponent
 ]
 
 @NgModule({

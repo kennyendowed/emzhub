@@ -22,11 +22,12 @@ import { TmNgOdometerModule } from 'tm-ng-odometer';
 import { TradeHeaderComponent } from './layout/trade/trade-header/trade-header.component';
 import { TradeFooterComponent } from './layout/trade/trade-footer/trade-footer.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 // import {MaterialModule} from './material/material.module';
 
 export const component = [TradeHeaderComponent,TradeFooterComponent,
-  ConsultationsComponent,ServiceComponent,ContactComponent,AboutComponent, HomeComponent,PublicHeaderComponent,PublicFooterComponent,RequestResetComponent,ResetPasswordComponent,
+  ConsultationsComponent,WelcomeComponent,ServiceComponent,ContactComponent,AboutComponent, HomeComponent,PublicHeaderComponent,PublicFooterComponent,RequestResetComponent,ResetPasswordComponent,
   CustomerFooterComponent,CustomerHeaderComponent,RegisterComponent,LoginComponent,VerifyAccountComponent
 ]
 
